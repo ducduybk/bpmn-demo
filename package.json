@@ -1,0 +1,60 @@
+{
+  "name": "custom-elements-example",
+  "version": "0.0.0",
+  "description": "An example on how to create a custom elements with bpmn-js",
+  "main": "app/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpmn-io/bpmn-js-examples"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "auto-test": "npm test -- --auto-watch --no-single-run",
+    "test": "karma start",
+    "bundle": "grunt build",
+    "dev": "grunt auto-build",
+    "all": "run-s lint test bundle"
+  },
+  "keywords": [
+    "bpmnjs-example"
+  ],
+  "author": {
+    "name": "Ricardo Matias",
+    "url": "https://github.com/ricardomatias"
+  },
+  "contributors": [
+    {
+      "name": "bpmn.io contributors",
+      "url": "https://github.com/bpmn-io"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "grunt": "~1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-cli": "^1.2.0",
+    "load-grunt-tasks": "~3.5.0",
+    "stringify": "^3.1.0",
+    "time-grunt": "^0.3.2",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "bpmn-js": "^6.5.1",
+    "bpmn-js-properties-panel": "^0.33.2",
+    "camunda-bpmn-moddle": "^4.0.1",
+    "diagram-js": "^5.0.0",
+    "jquery": "^3.4.1",
+    "inherits": "^2.0.1",
+    "min-dash": "^3.5.0",
+    "tiny-svg": "^2.0.0"
+  }
+}
